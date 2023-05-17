@@ -1,0 +1,139 @@
+:root{
+    --purple:hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-grey);
+    color: var(--off-black);
+}
+body span{
+    color:var(--purple);
+    font-style: italic;
+    font-weight:bold;
+}
+main{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h2{
+    margin:0px;
+}
+hr{
+    height:1px;
+    background-color: var(--light-grey);
+    border:none;
+    margin-top: 30px;
+}
+.contenedor{
+    background-color: var(--white);
+    border-radius: 15px 15px 130px 15px;
+    width: 650px;
+    padding: 50px;
+    position: relative;
+}
+
+.input-wrapper{
+    display:flex;
+    gap: 25px;
+}
+
+.input-wrapper div{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-wrapper label{
+    font-size:9px;
+    text-transform: uppercase;
+    color: var(--smokey-grey);
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.input-wrapper input{
+    font-size: 32px;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    border: 1px solid var(--light-grey);
+    font-weight:bold;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-wrapper input:focus{
+    border: 1px solid var(--purple);
+}
+.button-wrapper{
+    position: absolute;
+    text-align: end;
+    width: 85%;
+    bottom:240px;
+}
+
+
+button{
+    border:none;
+    background-color:var(--purple);
+    border-radius:50%;
+    padding:15px;
+    width:70px;
+    height:70px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: var(--off-black);
+}
+
+svg{
+    width:35px;
+    height:auto;
+}
+
+
+.date{
+    font-size: 40px;
+    line-height:70px;
+}
+
+p{
+    margin:0px;
+}
+
+.alert{
+    font-size:12px;
+    color:var(--light-red);
+    font-style:italic;
+}
+
+.input-black{
+    background-color: black;
+}
+
+.t-red{
+    color:red;
+}
+.b-red{
+    border:1px solid red;
+}
